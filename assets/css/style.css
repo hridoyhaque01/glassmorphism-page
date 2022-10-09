@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+*,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: 100%;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.btn {
+  position: relative;
+  border: none;
+  outline: none;
+  color: #3b3838;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 0;
+  width: 8px;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: rotate(10deg);
+  transition: 0.4s all ease-in-out;
+}
+.btn:hover::after {
+  left: 110%;
+}
+/* transparent_bg part design  */
+
+.transparent_bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.transparent_bg .box {
+  position: absolute;
+  border-radius: 10px;
+}
+
+.transparent_bg .box1 {
+  top: 35px;
+  left: 90px;
+  width: 250px;
+  height: 250px;
+  background-color: #a775ff;
+  filter: blur(40px);
+}
+.transparent_bg .box2 {
+  top: 55px;
+  right: 120px;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 230, 184, 0.3);
+  animation: boxmovement 2s ease-in-out infinite;
+}
+
+@keyframes boxmovement {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.transparent_bg .box3 {
+  bottom: 40px;
+  right: 120px;
+  width: 220px;
+  height: 220px;
+  background-color: #c1dfd0;
+  filter: blur(40px);
+}
+
+/* header part design  */
+
+.main-content {
+  position: relative;
+  z-index: 1111;
+  width: 80%;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .navbar {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.content,
+.banner .banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .logo a {
+  font-size: 20px;
+  color: #fff;
+}
+.content .main-menu .menu,
+.main-content .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.menu .item .link {
+  color: #e7e7e7;
+  text-transform: capitalize;
+  font-weight: 300;
+  transition: 0.3s all ease-in-out;
+}
+.menu .item .link:hover {
+  color: #fff;
+}
+
+.sign-buttons .btn:first-child {
+  margin-right: 10px;
+}
+
+/* banner part design  */
+
+.main-content .banner {
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+}
+
+.banner .banner-content {
+  column-gap: 130px;
+}
+
+.banner-content .banner-details h2 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 42px;
+}
+
+.banner-details h2 span {
+  color: #2bffb1;
+}
+.banner-content .banner-details p {
+  color: #e7e7e7;
+  margin: 15px 0;
+}
+
+.banner-content .banner-img img {
+  width: 100%;
+}
+
+.action-btn {
+  /* background-color: #5b41d0; */
+  color: #fff;
+  padding: 12px 24px;
+}
