@@ -159,7 +159,8 @@ a {
   font-weight: 300;
   transition: 0.3s all ease-in-out;
 }
-.menu .item .link:hover {
+.menu .item .link:hover,
+.menu .item .link.active {
   color: #fff;
 }
 
@@ -187,7 +188,7 @@ a {
 }
 
 .banner-details h2 span {
-  color: #2bffb1;
+  color: #63f1ff;
 }
 .banner-content .banner-details p {
   color: #e7e7e7;
