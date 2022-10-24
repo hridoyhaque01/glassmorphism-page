@@ -40,14 +40,15 @@ a {
   content: "";
   left: -20px;
   top: 0;
-  width: 8px;
+  width: 0;
   height: 110%;
   background-color: rgba(255, 255, 255, 0.4);
-  transform: rotate(10deg);
+  transform: skewX(-20deg);
   transition: 0.4s all ease-in-out;
 }
 .btn:hover::after {
   left: 110%;
+  width: 100%;
 }
 /* transparent_bg part design  */
 
